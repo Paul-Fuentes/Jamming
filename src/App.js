@@ -1,27 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchBar from './Components/SearchBar/SearchBar';
+import Results from './Components/Results/Results';
+import NewPlaylist from './Components/NewPlaylist/NewPlaylist';
+import Track from './Components/Track/Track';
+import Tracklist from './Components/TrackList/Tracklist';
 
 function App() {
-  const name = "Paul el mas querido";
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to coquer the world.
-        </p>
-         
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <h1>Jammming</h1>
       </header>
-    </div>
+      <SearchBar />
+      <div className='ResultsAndPlaylist'>
+        <Results />
+        <NewPlaylist />
+      </div>
+
+      <Track />
+      <Tracklist />
+    </>
   );
 }
 

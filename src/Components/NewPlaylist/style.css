@@ -1,0 +1,16 @@
+div.NewPlaylist {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+button.SaveToSpotify {
+    background-color: rgb(58, 0, 128);
+    color: white;
+    padding: 7px;
+    border-radius: 14px;
+    position: relative;
+    left: 22%;
+}
